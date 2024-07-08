@@ -9,11 +9,11 @@ namespace CodingPractice {
             }
 
             double closest = ts.First();
-            double absClosest = System.Math.Abs(closest);
+            double absClosest = Math.Abs(closest);
 
             // Iterate through array to find number closest to 0.
             foreach (double currTemp in ts) {
-                double absCurrTemp = System.Math.Abs(currTemp);
+                double absCurrTemp = Math.Abs(currTemp);
 
                 // Compare, ensure positive number wins.
                 if (absCurrTemp <= absClosest) {
@@ -28,15 +28,11 @@ namespace CodingPractice {
                     }
                     
                    // Update.
-                    absClosest = System.Math.Abs(closest);
+                    absClosest = Math.Abs(closest);
                 }
             }
 
             return closest;
-        }
-
-        static double GetAbsoluteValue(double temp) {
-            return temp >= 0 ? temp : temp * (-1);
         }
     }
 }
