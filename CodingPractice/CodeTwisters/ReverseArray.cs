@@ -1,4 +1,4 @@
-namespace CodingPractice {
+namespace CodingPractice.CodeTwisters {
     // Reverse any array.
     public static class ReverseArray<T> {
         public static T[]? Do(T[]? value) {
@@ -12,7 +12,7 @@ namespace CodingPractice {
             T temp = value[0];
 
             // Starting from the rightmost index,
-            // switch with rightmost index with the leftmost index.
+            // switch rightmost index with the leftmost index.
             // Then, move to next rightmost and next leftmost indices
             // until halfway through array,
             // at which point the entire array has been reversed.

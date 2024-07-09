@@ -1,8 +1,7 @@
-namespace CodingPractice {
+namespace CodingPractice.CodeTwisters {
     public static class ClockAngle
     {
-        // Given 12-hour clock time in intervals as small as 5 minutes,
-        // determine angle between hour hand and minute hand.
+        // Given 12-hour clock time, determine angle between hour hand and minute hand.
         public static int Calculate(int hour, int minute) {
             // Validate input.
             if (hour < 1 || hour > 12 || minute < 0 || minute > 59) {

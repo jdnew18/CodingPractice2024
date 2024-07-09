@@ -1,4 +1,4 @@
-namespace CodingPractice {
+namespace CodingPractice.CodeTwisters {
     public static class SumDigits {
         // Calculate sum of an integer's digits.
         public static int Calculate(int value) {

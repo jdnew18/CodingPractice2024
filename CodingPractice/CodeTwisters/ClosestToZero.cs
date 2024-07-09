@@ -1,4 +1,4 @@
-namespace CodingPractice {
+namespace CodingPractice.CodeTwisters {
     public static class ClosestToZero
     {
         // Return number in array whose absolute value is closest to zero.
