@@ -10,6 +10,8 @@ namespace CodingPractice.CodeTwisters {
             return Calculate(factorial, 1);
         }
 
+        // Calculate product of the factorial, subtracting 1 from the requested factorial
+        // until the requested factorial is 0.
         private static int Calculate(int factorial, int product) {
             product *= factorial;
             return --factorial > 0 ? Calculate(factorial, product) : product; 
