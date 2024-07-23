@@ -1,7 +1,11 @@
 namespace CodingPractice.CodeTwisters {
     public static class SumDigits {
-        // Calculate sum of an integer's digits.
+        // Calculate sum of a positive integer's digits.
         public static int Calculate(int value) {
+            if (value < 0) {
+                throw new Exception("Integer must be positive.");
+            }
+
             int sum = 0;
 
             // Calculate sum of an integer's digits by
